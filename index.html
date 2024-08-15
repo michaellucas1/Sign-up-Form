@@ -4,9 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-Up Form</title>
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./css/index.css">
+    <link rel="stylesheet" href="./css/my-css-reset.css">
 </head>
 <body>
+    <main>
+        <section class="section-background">
+            <figure>
+                <img src="./images/halie-west-25xggax4bSA-unsplash.jpg" alt="green leaf plant in close up photography">
+                <figcaption>Photo by Halie On Unsplash</figcaption>
+            </figure>
+            
+        </section>
+        <section class="section-form">
+            <div class="section-header">
+                <div>This is not a real online service! You know you need something like this
+                    in your life to help you realize your deepest dreams.
+                </div>
+                <div>Sign up <em>now</em> to get started</div>
+            </div>
+            <form action="" method="get" class="signup-form">
+                <fieldset class="form-header">
+                    <legend><h3>Lets do this!</h3></legend>
+                <div class="form-row">
+                    <label for="first-name">First Name</label>
+                    <input type="text" id="first-name" name="first-name" required>
+                    <label for="last-name">Last Name</label>
+                    <input type="text" id="last-name" name="last-name" required>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email">
+                    <label for="phone-number">Phone Number</label>
+                    <input type="tel" id="phone-number" name="phone-number">
+                </div>
+                <div class="form-row">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" name="password">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" name="confirm-password">
+                </div>
+                </fieldset>
+                <div class="form-row">
+                    <button>Submit</button>
+                </div>
+                <div class="form-row">
+                    <p>Alread have an account? <a href="">Log in</a></p>
+                </div>
+            </form>
+        </section>
+    </main>
     <script defer src="./index.js"></script>
 </body>
 </html>
