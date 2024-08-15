@@ -1,0 +1,14 @@
+main{
+    display:flex;
+    flex-direction: row;
+}
+main >.section-background{
+    height:100%;
+}
+section>.section-header{
+    margin-top:10rem;
+}
+section >.section-header,
+section >.signup-form{
+    margin-left:3rem;
+}
