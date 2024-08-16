@@ -12,3 +12,13 @@ section >.section-header,
 section >.signup-form{
     margin-left:3rem;
 }
+.form-row > input{
+    width:20rem;
+}
+.form-row {
+    display:flex;
+    flex-direction: column;
+}
+.form-row > input {
+    margin-bottom:1rem;
+}
