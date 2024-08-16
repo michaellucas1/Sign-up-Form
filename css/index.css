@@ -9,16 +9,24 @@ section>.section-header{
     margin-top:10rem;
 }
 section >.section-header,
-section >.signup-form{
-    margin-left:3rem;
+section >.account-login,
+form > .form-body, 
+form > .form-button{
+    padding-left:3rem;
 }
-.form-row > input{
-    width:20rem;
+form > .form-body{
+    
+    box-shadow: 0 4px 6px 2px rgb(0, 0, 0, 0.18);
 }
 .form-row {
     display:flex;
-    flex-direction: column;
+    flex-direction: row;
 }
-.form-row > input {
+.form-row > .form-column{
+    display:flex;
+    flex-direction:column;
+}
+.form-row > * {
     margin-bottom:1rem;
+    margin-right:1rem;
 }
