@@ -1,17 +1,29 @@
 :root{
-    --custom-font-size:18px;
+    --custom-font-size:20px;
+}
+body{
+    font-family:"Helvetica","Arial", sans-serif;
 }
 main{
     display:flex;
     flex-direction: row;
+    background-color: rgb(248, 248, 248);
 }
 main >.section-background{
-    height:100%;
+    background-image: url(../images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    width:100%;
 }
-section>.section-header{
-    
+
+section >.section-header,
+.form-body > .form-message{
     font-size:var(--custom-font-size);
+    text-align: left;
     font-weight: bold;
+    padding-right:1.4rem;
+    margin-right:5rem;
+    width:700px;
 }
 section >.section-header > div:nth-child(1){
     margin-top:10rem;
@@ -22,31 +34,42 @@ section >.section-header > div:nth-child(2){
 section >.section-header > div:nth-child(3){
     margin-bottom:3rem;
 }
-.form-body > .form-message{
-    font-size:var(--custom-font-size);
-    font-weight:bold;
+section >.account-login{
+    margin-bottom: 10rem;
+    margin-top:1.7rem;
+}
+section >.account-login >p> a{
+    color:rgb(89, 109, 72);
+    text-decoration:none;
+    font-weight: bold;
 }
 section >.section-header,
 section >.account-login,
 form > .form-body, 
 form > .form-button{
-    padding-left:3rem;
+    padding-left:2.5rem;
 }
-form > .form-body{
-    
-    box-shadow: 0 4px 6px 2px rgb(0, 0, 0, 0.18);
+form > .form-body,
+.form-button > button{
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
 }
 .form-column >input{
     border:1px solid rgb(225, 225, 225);
-    border-radius: 2px;
+    border-radius: 4px;
+    padding-left:0.5rem;
     height:2rem; 
+}
+.form-column >input:focus{
+    outline:1px solid blue;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
 }
 .form-row {
     display:flex;
     flex-direction: row;
 }
 .form-column > label{
-    font-size:12px;
+    font-size:14px;
+    letter-spacing: 0.1rem;
 }
 .form-row > .form-column{
     display:flex;
@@ -56,7 +79,20 @@ form > .form-body{
 }
 .form-body{
     padding-bottom:1rem;
+    background-color: white;
+   
 }
 .form-body > .form-message{
     padding:1rem 0 1rem 0;
+}
+form > .form-button{
+    padding: 2rem 0 0 2.5rem;
+}
+form > .form-button > button{
+    color:white;
+    font-weight: bold;
+    border-radius: 5px;
+    background-color: rgb(89, 109, 72);
+    border:none;
+    padding:0.5rem 2.5rem 0.5rem 2.5rem;
 }
