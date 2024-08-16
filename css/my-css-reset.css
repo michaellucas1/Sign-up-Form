@@ -1,79 +1,26 @@
 @import "modern-normalize";
-*{
-    padding:0;
-    margin:0;
+
+:root {
+  line-height: 1.5;
 }
-body{
-    line-height:1.5;
-    -webkit-font-smoothing:antialised;
+
+h1, h2, h3, h4, h5, figure, p, ol, ul {
+  margin: 0;
 }
-h1,h2,h3,h4,h5,figure,p,ol,ul{
-    margin-top:1rem;
+
+ol[role="list"], ul[role="list"] {
+  list-style: none;
+  padding-inline: 0;
 }
-ol[role="list"],ul[role="list"]{
-    list-style:none;
-    padding-inline:0;
+
+h1, h2, h3, h4, h5 {
+  font-size: inherit;
+  font-weight: inherit;
 }
-h1,h2,h3,h4,h5 {
-    font-size:inherit;
-    font-weight:inherit;
-}
-p,h1,h2,h3,h4,h5,h6{
-    overflow-wrap:break-word;
-}
-p{
-    width:60ch;
-    max-width: 100%;
-}
-form p{
-    font-size:1em;
-    line-height: calc(1ex / 0.32);
-    margin:calc(1ex / 0.32) 0;
-}
-form h1{
-    font-size:2.5em;
-    line-height:calc(1ex / 0.42);
-    margin: calc(1ex / 0.42) 0;
-}
-form h2{
-    font-size:2em;
-    line-height:calc(1ex / 0.42);
-    margin: calc(1ex  / 0.42) 0;
-}
-form h3{
-    font-size:1.75em;
-    line-height: calc(1ex / 0.38);
-    margin: calc(1ex / 0.38) 0;
-}
-form h4 {
-    font-size:1.5em;
-    line-height:calc(1ex / 0.37);
-    margin: calc(1ex / 0.37) 0;
-}
-img,picture,video,canvas,svg{
-    display:block;
-    max-width:100%;
-}
-img,video,iframe{
-    max-inline-size: 100%;
-    block-size:auto;
-}
-input,button,textarea,select{
-    font:inherit;
-}
-button,
-label,
-input,
-select,
-progress,
-meter{
-    display: block;
-    font-family:inherit;
-    font-size:100%;
-    margin: 0;
-    width:100%;
-    padding:5px;
-    height:30px;
+
+img {
+  display: block;
+  max-inline-size: 100%;
 }
 
 #root,#__next{
