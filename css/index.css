@@ -102,11 +102,11 @@ form > .form-body,
     outline:1px solid blue;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
 }
-.form-column >input:not(input[type="password"]):focus{
+.form-column >input:focus:valid{
     outline:1px solid blue;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
 }
-.form-column > input[type="password"]:invalid{
+.form-column > input:focus:invalid{
     outline:1px solid red;
 }
 .form-row {
@@ -118,7 +118,7 @@ form > .form-body,
     letter-spacing: 0.1rem;
 }
 .form-column > span{
-    visibility: visible;
+    visibility: hidden;
     font-size:12px;
     color:red;
 }
