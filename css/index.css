@@ -60,7 +60,15 @@ form > .form-body,
     height:2rem; 
     width:15rem;
 }
-.form-column >input:focus{
+.invalid{
+    outline:1px solid red;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+}
+.valid{
+    outline:1px solid blue;
+    box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
+}
+.form-column >input:not(input[type="password"]):focus{
     outline:1px solid blue;
     box-shadow: 0 4px 8px 0 rgb(0, 0, 0, 0.2);
 }
