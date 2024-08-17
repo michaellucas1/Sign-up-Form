@@ -1,5 +1,6 @@
 :root{
-    --custom-font-size:20px;
+    --custom-header-font-size:20px;
+    --custom-body-font-size:14px;
 }
 body{
     font-family:"Helvetica","Arial", sans-serif;
@@ -11,14 +12,24 @@ main{
 }
 main >.section-background{
     background-image: url(../images/halie-west-25xggax4bSA-unsplash.jpg);
+    background-attachment: scroll;
     background-size: cover;
-    background-repeat: no-repeat;
     width:100%;
+}
+.section-background > p {
+    font-size:var(--custom-body-font-size);
+    position:relative;
+    bottom:-55rem;
+    right:-7rem;
+    color:white;
+}
+.section-background > p > a:visited{
+    color:white;
 }
 
 section >.section-header,
 .form-body > .form-message{
-    font-size:var(--custom-font-size);
+    font-size:var(--custom-header-font-size);
     text-align: left;
     font-weight: bold;
     padding-right:1.4rem;
@@ -80,7 +91,7 @@ form > .form-body,
     flex-direction: row;
 }
 .form-column > label{
-    font-size:14px;
+    font-size:var(--custom-body-font-size);
     letter-spacing: 0.1rem;
 }
 .form-row > .form-column{
