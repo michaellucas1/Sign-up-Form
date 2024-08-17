@@ -37,23 +37,26 @@
                     <div class="form-row">
                         <div class="form-column">
                             <label for="email">Email</label>
-                            <input type="email" id="email" name="email">
+                            <input type="email" id="email" name="email" required >
                         </div>
                         <div class="form-column">
                             <label for="phone-number">Phone Number</label>
-                            <input type="tel" id="phone-number" name="phone-number">
+                            <input type="tel" id="phone-number" name="phone-number" pattern="\d{3}-\d{3}-\d{4}" placeholder="ex. 123-456-7890" maxlength="12"  required>
                         </div>
                     </div>
                     <div class="form-row">
                         <div class="form-column">
                             <label for="password">Password</label>
-                            <input class="invalid" type="password" id="password" name="password" required>
-                            <span>* Passwords do not match</span>
+                            <input class="" type="password" minlength="8" id="password" name="password" pattern="^.*(?=.{8,20})(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).*$" required>
+                            <span id="matching">* Passwords do not match</span>
+                            <span id="upperCase">* Must include an uppercase letter</span>
+                            <span id="numberLetters">* Must use both numbers and letters</span>
+                            <span id="specialChar">* Must include a non-alphanumeric symbols ex.(@#$%!)</span>
+                            <span id="minLength">* Must be more than 8 in length</span>
                         </div>
                         <div class="form-column">
                             <label for="confirm-password">Confirm Password</label>
-                            <input class="invalid" type="password" id="confirm-password" name="confirm-password" required>
-                            
+                            <input class="" type="password" id="confirm-password" name="confirm-password" pattern="^.*(?=.{8,20})(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).*$" required>
                         </div>
                     </div>
                 </div>
