@@ -1,5 +1,5 @@
 const password = document.querySelectorAll('input[type="password"');
-const message =document.querySelectorAll(".form-column > span");
+const message =document.querySelectorAll(".error-messages > span");
 password.forEach((currentValue)=>{
     currentValue.addEventListener("keyup",(event)=>{
        checkLength(currentValue.value);
