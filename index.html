@@ -48,16 +48,19 @@
                         <div class="form-column">
                             <label for="password">Password</label>
                             <input class="" type="password" minlength="8" id="password" name="password" pattern="^.*(?=.{8,20})(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).*$" required>
-                            <span id="matching">* Passwords do not match</span>
-                            <span id="upperCase">* Must include an uppercase letter</span>
-                            <span id="numberLetters">* Must use both numbers and letters</span>
-                            <span id="specialChar">* Must include a non-alphanumeric symbols ex.(@#$%!)</span>
-                            <span id="minLength">* Must be more than 8 in length</span>
+                            
                         </div>
                         <div class="form-column">
                             <label for="confirm-password">Confirm Password</label>
                             <input class="" type="password" id="confirm-password" name="confirm-password" pattern="^.*(?=.{8,20})(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*\W).*$" required>
                         </div>
+                    </div>
+                    <div class="error-messages">
+                        <span id="matching">* Passwords do not match</span>
+                        <span id="upperCase">* Must include an uppercase letter</span>
+                        <span id="numberLetters">* Must use both numbers and letters</span>
+                        <span id="specialChar">* Must include a non-alphanumeric symbols ex.(@#$%!)</span>
+                        <span id="minLength">* Must be more than 8 in length</span>
                     </div>
                 </div>
                 <div class="form-button">
