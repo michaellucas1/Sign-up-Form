@@ -55,7 +55,7 @@ section >.section-header,
     font-size:var(--custom-header-font-size);
     text-align: left;
     font-weight: bold;
-    padding-right:1.4rem;
+    padding-right:2rem;
     margin-right:5rem;
     width:700px;
 }
@@ -117,7 +117,10 @@ form > .form-body,
     font-size:var(--custom-body-font-size);
     letter-spacing: 0.1rem;
 }
-.form-column > span{
+.error-messages > span{
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-start;
     visibility: hidden;
     font-size:12px;
     color:red;
