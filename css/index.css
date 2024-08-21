@@ -18,7 +18,7 @@ main >.section-background{
     display: flex;
     flex-direction: column;
     justify-content: space-around;
-    align-items:center;
+    align-items:stretch;
     position:static;
     background-image: url(../images/halie-west-25xggax4bSA-unsplash.jpg);
     background-attachment: scroll;
@@ -27,6 +27,7 @@ main >.section-background{
 }
 .section-background > p {
     font-size:var(--custom-body-font-size);
+    align-self:center;
     color:white;
     margin-top:55rem;
 }
